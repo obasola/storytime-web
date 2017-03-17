@@ -1,0 +1,91 @@
+	<fieldset class="col-sm-12 bordure">
+		<legend class="legende">{{ 'Requirement' | translate }}</legend>
+		
+		<div ng-include src="'partials/message-include.html'"></div>
+   		
+		<form class="well form-horizontal">
+			<div class="form-group">
+				<label for="requirement_idrequirement" class="col-sm-2 control-label">{{ 'requirement.idrequirement' | translate }}</label>
+				<div class="col-sm-10">
+					<input type="text" id="requirement_idrequirement" name="idrequirement" ng-model="requirement.idrequirement" class="form-control" maxLength="11"  ng-disabled="mode != 'create'"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="requirement_title" class="col-sm-2 control-label">{{ 'requirement.title' | translate }}</label>
+				<div class="col-sm-10">
+					<input type="text" id="requirement_title" name="title" ng-model="requirement.title" class="form-control" maxLength="75" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="requirement_description" class="col-sm-2 control-label">{{ 'requirement.description' | translate }}</label>
+				<div class="col-sm-10">
+					<textarea id="requirement_description" name="description" ng-model="requirement.description" class="form-control" ></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="requirement_acceptanceCriteria" class="col-sm-2 control-label">{{ 'requirement.acceptanceCriteria' | translate }}</label>
+				<div class="col-sm-10">
+					<textarea id="requirement_acceptanceCriteria" name="acceptanceCriteria" ng-model="requirement.acceptanceCriteria" class="form-control" ></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="requirement_createdOn" class="col-sm-2 control-label">{{ 'requirement.createdOn' | translate }}</label>
+				<div class="col-sm-10">
+					<input id="requirement_createdOn" bs-datepicker data-autoclose="1" ng-model="requirement.createdOn" name="createdOn" class="form-control" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="requirement_createdBy" class="col-sm-2 control-label">{{ 'requirement.createdBy' | translate }}</label>
+				<div class="col-sm-10">
+					<input type="text" id="requirement_createdBy" name="createdBy" ng-model="requirement.createdBy" class="form-control" maxLength="11" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="requirement_startDate" class="col-sm-2 control-label">{{ 'requirement.startDate' | translate }}</label>
+				<div class="col-sm-10">
+					<input id="requirement_startDate" bs-datepicker data-autoclose="1" ng-model="requirement.startDate" name="startDate" class="form-control" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="requirement_endDate" class="col-sm-2 control-label">{{ 'requirement.endDate' | translate }}</label>
+				<div class="col-sm-10">
+					<input id="requirement_endDate" bs-datepicker data-autoclose="1" ng-model="requirement.endDate" name="endDate" class="form-control" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="requirement_status" class="col-sm-2 control-label">{{ 'requirement.status' | translate }}</label>
+				<div class="col-sm-10">
+					<input type="text" id="requirement_status" name="status" ng-model="requirement.status" class="form-control" maxLength="11" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="requirement_statusCodeId" class="col-sm-2 control-label">{{ 'requirement.statusCodeId' | translate }}</label>
+				<div class="col-sm-10">
+                    <select id="requirement_statusCodeId" ng-model="requirement.statusCodeId" name="statusCodeId" class="form-control">
+						<option value=""></option>
+                        <option ng-repeat="statusCode in items.statusCodes" title="{{statusCode.label}}" ng-selected="{{statusCode.value == requirement.statusCodeId}}" value="{{statusCode.value}}">{{statusCode.label}}</option>
+                    </select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="requirement_priority" class="col-sm-2 control-label">{{ 'requirement.priority' | translate }}</label>
+				<div class="col-sm-10">
+					<input type="text" id="requirement_priority" name="priority" ng-model="requirement.priority" class="form-control" maxLength="11" />
+				</div>
+			</div>
+
+			<!-- ACTION BUTTONS -->
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-2">
+					<a role="button" class="btn btn-danger btn-block" ng-click="delete(requirement.idrequirement)" ng-show="mode != 'create'">{{ 'delete' | translate }}</a>
+				</div>
+    			<div class="col-sm-offset-4 col-sm-2">
+					<a role="button" class="btn btn-default btn-block" href="#/requirement">{{ 'cancel' | translate }}</a>
+				</div>
+    			<div class="col-sm-2">
+					<button type="submit" class="btn btn-primary btn-lg btn-block" ng-click="save()">{{ 'save' | translate }}</button>
+				</div>
+			</div>
+		</form>
+			
+    </fieldset>

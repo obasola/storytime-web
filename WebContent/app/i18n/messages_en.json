@@ -1,0 +1,68 @@
+{
+	"welcome" : "Welcome",
+	
+	"english" : "English",
+    "french" : "Fran\u00e7ais",
+	
+	"create" : "Create",
+	"edit" : "Edit",
+	"delete" : "Delete",
+	"delete ok" : "Delete ok",
+	"save" : "Save",
+	"save ok" : "Save ok",
+	"cancel" : "Cancel",
+
+	"Comment" : "Comment",
+	"comment.idcomment" : "idcomment",
+	"comment.description" : "description",
+	"comment.requirementIdrequirement" : "requirementIdrequirement",
+	"comment.id.not.defined" : "Comment identifier is not defined",
+
+	"Person" : "Person",
+	"person.idperson" : "idperson",
+	"person.firstName" : "firstName",
+	"person.lastName" : "lastName",
+	"person.id.not.defined" : "Person identifier is not defined",
+
+	"PersonAssignment" : "PersonAssignment",
+	"personAssignment.personIdperson" : "personIdperson",
+	"personAssignment.requirementIdrequirement" : "requirementIdrequirement",
+	"personAssignment.status" : "status",
+	"personAssignment.id.not.defined" : "PersonAssignment identifier is not defined",
+
+	"Requirement" : "Requirement",
+	"requirement.idrequirement" : "idrequirement",
+	"requirement.title" : "title",
+	"requirement.description" : "description",
+	"requirement.acceptanceCriteria" : "acceptanceCriteria",
+	"requirement.createdOn" : "createdOn",
+	"requirement.createdBy" : "createdBy",
+	"requirement.startDate" : "startDate",
+	"requirement.endDate" : "endDate",
+	"requirement.status" : "status",
+	"requirement.statusCodeId" : "statusCodeId",
+	"requirement.priority" : "priority",
+	"requirement.id.not.defined" : "Requirement identifier is not defined",
+
+	"RequirementSpecificationType" : "RequirementSpecificationType",
+	"requirementSpecificationType.requirementIdrequirement" : "requirementIdrequirement",
+	"requirementSpecificationType.specificationTypeIdrequirementType" : "specificationTypeIdrequirementType",
+	"requirementSpecificationType.id.not.defined" : "RequirementSpecificationType identifier is not defined",
+
+	"SpecificationType" : "SpecificationType",
+	"specificationType.idrequirementType" : "idrequirementType",
+	"specificationType.name" : "name",
+	"specificationType.description" : "description",
+	"specificationType.id.not.defined" : "SpecificationType identifier is not defined",
+
+	"StatusCode" : "StatusCode",
+	"statusCode.id" : "id",
+	"statusCode.code" : "code",
+	"statusCode.id.not.defined" : "StatusCode identifier is not defined",
+	
+	"server.not.responding": "The server is not responding",
+	"url.invalid": "Invalid URL : {value}",
+	"url.bad": "Bad URL : {value}",
+
+	"app.version" : "Version"
+}

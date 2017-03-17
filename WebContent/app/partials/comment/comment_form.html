@@ -1,0 +1,43 @@
+	<fieldset class="col-sm-12 bordure">
+		<legend class="legende">{{ 'Comment' | translate }}</legend>
+		
+		<div ng-include src="'partials/message-include.html'"></div>
+   		
+		<form class="well form-horizontal">
+			<div class="form-group">
+				<label for="comment_idcomment" class="col-sm-2 control-label">{{ 'comment.idcomment' | translate }}</label>
+				<div class="col-sm-10">
+					<input type="text" id="comment_idcomment" name="idcomment" ng-model="comment.idcomment" class="form-control" maxLength="11"  ng-disabled="mode != 'create'"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="comment_description" class="col-sm-2 control-label">{{ 'comment.description' | translate }}</label>
+				<div class="col-sm-10">
+					<textarea id="comment_description" name="description" ng-model="comment.description" class="form-control" ></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="comment_requirementIdrequirement" class="col-sm-2 control-label">{{ 'comment.requirementIdrequirement' | translate }}</label>
+				<div class="col-sm-10">
+                    <select id="comment_requirementIdrequirement" ng-model="comment.requirementIdrequirement" name="requirementIdrequirement" class="form-control">
+						<option value=""></option>
+                        <option ng-repeat="requirement in items.requirements" title="{{requirement.label}}" ng-selected="{{requirement.value == comment.requirementIdrequirement}}" value="{{requirement.value}}">{{requirement.label}}</option>
+                    </select>
+				</div>
+			</div>
+
+			<!-- ACTION BUTTONS -->
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-2">
+					<a role="button" class="btn btn-danger btn-block" ng-click="delete(comment.idcomment)" ng-show="mode != 'create'">{{ 'delete' | translate }}</a>
+				</div>
+    			<div class="col-sm-offset-4 col-sm-2">
+					<a role="button" class="btn btn-default btn-block" href="#/comment">{{ 'cancel' | translate }}</a>
+				</div>
+    			<div class="col-sm-2">
+					<button type="submit" class="btn btn-primary btn-lg btn-block" ng-click="save()">{{ 'save' | translate }}</button>
+				</div>
+			</div>
+		</form>
+			
+    </fieldset>

@@ -1,0 +1,22 @@
+		<fieldset class="col-sm-12 bordure">
+			<legend class="legende">{{ 'StatusCode' | translate }}</legend>
+		
+			<div ng-include src="'partials/message-include.html'"></div>
+			
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>{{ 'statusCode.id' | translate }}</th>
+						<th>{{ 'statusCode.code' | translate }}</th>
+						<th><a class="btn btn-info" href='#/statusCode/new'>{{ 'create' | translate }}</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="statusCode in statusCodes">
+						<td>{{statusCode.id}}</td>
+						<td>{{statusCode.code}}</td>
+						<td><a class="btn btn-info" href="#/statusCode/{{statusCode.id}}">{{ 'edit' | translate }}</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>

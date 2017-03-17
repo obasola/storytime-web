@@ -1,0 +1,38 @@
+		<fieldset class="col-sm-12 bordure">
+			<legend class="legende">{{ 'Requirement' | translate }}</legend>
+		
+			<div ng-include src="'partials/message-include.html'"></div>
+			
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>{{ 'requirement.idrequirement' | translate }}</th>
+						<th>{{ 'requirement.title' | translate }}</th>
+						<th>{{ 'requirement.description' | translate }}</th>
+						<th>{{ 'requirement.acceptanceCriteria' | translate }}</th>
+						<th>{{ 'requirement.createdOn' | translate }}</th>
+						<th>{{ 'requirement.createdBy' | translate }}</th>
+						<th>{{ 'requirement.startDate' | translate }}</th>
+						<th>{{ 'requirement.endDate' | translate }}</th>
+						<th>{{ 'requirement.status' | translate }}</th>
+						<th>{{ 'requirement.priority' | translate }}</th>
+						<th><a class="btn btn-info" href='#/requirement/new'>{{ 'create' | translate }}</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="requirement in requirements">
+						<td>{{requirement.idrequirement}}</td>
+						<td>{{requirement.title}}</td>
+						<td>{{requirement.description}}</td>
+						<td>{{requirement.acceptanceCriteria}}</td>
+						<td>{{requirement.createdOn | date:'shortDate'}}</td>
+						<td>{{requirement.createdBy | number }}</td>
+						<td>{{requirement.startDate | date:'shortDate'}}</td>
+						<td>{{requirement.endDate | date:'shortDate'}}</td>
+						<td>{{requirement.status | number }}</td>
+						<td>{{requirement.priority | number }}</td>
+						<td><a class="btn btn-info" href="#/requirement/{{requirement.idrequirement}}">{{ 'edit' | translate }}</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>

@@ -1,0 +1,22 @@
+		<fieldset class="col-sm-12 bordure">
+			<legend class="legende">{{ 'RequirementSpecificationType' | translate }}</legend>
+		
+			<div ng-include src="'partials/message-include.html'"></div>
+			
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>{{ 'requirementSpecificationType.requirementIdrequirement' | translate }}</th>
+						<th>{{ 'requirementSpecificationType.specificationTypeIdrequirementType' | translate }}</th>
+						<th><a class="btn btn-info" href='#/requirementSpecificationType/new'>{{ 'create' | translate }}</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="requirementSpecificationType in requirementSpecificationTypes">
+						<td>{{requirementSpecificationType.requirementIdrequirement}}</td>
+						<td>{{requirementSpecificationType.specificationTypeIdrequirementType}}</td>
+						<td><a class="btn btn-info" href="#/requirementSpecificationType/{{requirementSpecificationType.requirementIdrequirement}}/{{requirementSpecificationType.specificationTypeIdrequirementType}}">{{ 'edit' | translate }}</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>

@@ -1,0 +1,22 @@
+		<fieldset class="col-sm-12 bordure">
+			<legend class="legende">{{ 'Comment' | translate }}</legend>
+		
+			<div ng-include src="'partials/message-include.html'"></div>
+			
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>{{ 'comment.idcomment' | translate }}</th>
+						<th>{{ 'comment.description' | translate }}</th>
+						<th><a class="btn btn-info" href='#/comment/new'>{{ 'create' | translate }}</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="comment in comments">
+						<td>{{comment.idcomment}}</td>
+						<td>{{comment.description}}</td>
+						<td><a class="btn btn-info" href="#/comment/{{comment.idcomment}}">{{ 'edit' | translate }}</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>

@@ -1,0 +1,68 @@
+{
+	"welcome" : "Accueil",
+
+	"english" : "English",
+    "french" : "Fran\u00e7ais",	
+	
+	"create" : "Cr\u00e9er",
+	"edit" : "Modifier",
+	"delete" : "Supprimer",
+	"delete ok" : "Suppression r\u00e9ussie",
+	"save" : "Enregistrer",
+	"save ok" : "Enregistrement r\u00e9ussi",
+	"cancel" : "Annuler",
+
+	"Comment" : "Comment",
+	"comment.idcomment" : "idcomment",
+	"comment.description" : "description",
+	"comment.requirementIdrequirement" : "requirementIdrequirement",
+	"comment.id.not.defined" : "L'identfiant de Comment n'est pas d\u00E9fini",
+
+	"Person" : "Person",
+	"person.idperson" : "idperson",
+	"person.firstName" : "firstName",
+	"person.lastName" : "lastName",
+	"person.id.not.defined" : "L'identfiant de Person n'est pas d\u00E9fini",
+
+	"PersonAssignment" : "PersonAssignment",
+	"personAssignment.personIdperson" : "personIdperson",
+	"personAssignment.requirementIdrequirement" : "requirementIdrequirement",
+	"personAssignment.status" : "status",
+	"personAssignment.id.not.defined" : "L'identfiant de PersonAssignment n'est pas d\u00E9fini",
+
+	"Requirement" : "Requirement",
+	"requirement.idrequirement" : "idrequirement",
+	"requirement.title" : "title",
+	"requirement.description" : "description",
+	"requirement.acceptanceCriteria" : "acceptanceCriteria",
+	"requirement.createdOn" : "createdOn",
+	"requirement.createdBy" : "createdBy",
+	"requirement.startDate" : "startDate",
+	"requirement.endDate" : "endDate",
+	"requirement.status" : "status",
+	"requirement.statusCodeId" : "statusCodeId",
+	"requirement.priority" : "priority",
+	"requirement.id.not.defined" : "L'identfiant de Requirement n'est pas d\u00E9fini",
+
+	"RequirementSpecificationType" : "RequirementSpecificationType",
+	"requirementSpecificationType.requirementIdrequirement" : "requirementIdrequirement",
+	"requirementSpecificationType.specificationTypeIdrequirementType" : "specificationTypeIdrequirementType",
+	"requirementSpecificationType.id.not.defined" : "L'identfiant de RequirementSpecificationType n'est pas d\u00E9fini",
+
+	"SpecificationType" : "SpecificationType",
+	"specificationType.idrequirementType" : "idrequirementType",
+	"specificationType.name" : "name",
+	"specificationType.description" : "description",
+	"specificationType.id.not.defined" : "L'identfiant de SpecificationType n'est pas d\u00E9fini",
+
+	"StatusCode" : "StatusCode",
+	"statusCode.id" : "id",
+	"statusCode.code" : "code",
+	"statusCode.id.not.defined" : "L'identfiant de StatusCode n'est pas d\u00E9fini",
+
+	"server.not.responding": "Le serveur ne r\u00e9pond pas",
+	"url.invalid": "URL invalide : {value}",
+	"url.bad": "URL incorrecte : {value}",
+
+	"app.version" : "Version"
+}
