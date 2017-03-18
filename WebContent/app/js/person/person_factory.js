@@ -15,9 +15,11 @@ personModule.factory('Person', ['$http', 'restURL', function($http, restURL) {
      */
 	var validate = function (person) {
 		var errors = [];
+		/*
         if( person.idperson == null || person.idperson == '' ) {
 			errors.push('person.id.not.defined');
 		}
+		*/
 		if(errors.length > 0) {
 			throw errors;
 		}

@@ -29,7 +29,7 @@
 			<div class="form-group">
 				<label for="requirement_statusCodeId" class="col-sm-2 control-label">{{ 'requirement.statusCodeId' | translate }}</label>
 				<div class="col-sm-10">
-                    <select id="requirement_statusCodeId" ng-model="requirement.status" name="statusCodeId" class="form-control">
+                    <select id="requirement_statusCodeId" ng-model="requirement.statusCodeId" name="statusCodeId" class="form-control">
 						<option value=""></option>
                         <option ng-repeat="statusCode in items.statusCodes" title="{{statusCode.label}}" ng-selected="{{statusCode.value == requirement.statusCodeId}}" value="{{statusCode.value}}">{{statusCode.label}}</option>
                     </select>

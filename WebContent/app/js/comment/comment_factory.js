@@ -15,9 +15,11 @@ commentModule.factory('Comment', ['$http', 'restURL', function($http, restURL) {
      */
 	var validate = function (comment) {
 		var errors = [];
+		/*
         if( comment.idcomment == null || comment.idcomment == '' ) {
 			errors.push('comment.id.not.defined');
 		}
+		*/
 		if(errors.length > 0) {
 			throw errors;
 		}

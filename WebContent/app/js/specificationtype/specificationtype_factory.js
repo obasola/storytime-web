@@ -15,9 +15,11 @@ specificationTypeModule.factory('SpecificationType', ['$http', 'restURL', functi
      */
 	var validate = function (specificationType) {
 		var errors = [];
+		/*
         if( specificationType.idrequirementType == null || specificationType.idrequirementType == '' ) {
 			errors.push('specificationType.id.not.defined');
 		}
+		*/
 		if(errors.length > 0) {
 			throw errors;
 		}

@@ -15,9 +15,11 @@ statusCodeModule.factory('StatusCode', ['$http', 'restURL', function($http, rest
      */
 	var validate = function (statusCode) {
 		var errors = [];
+		/*
         if( statusCode.id == null || statusCode.id == '' ) {
 			errors.push('statusCode.id.not.defined');
 		}
+		*/
 		if(errors.length > 0) {
 			throw errors;
 		}

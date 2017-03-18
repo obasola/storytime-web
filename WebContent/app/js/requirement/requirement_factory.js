@@ -15,9 +15,11 @@ requirementModule.factory('Requirement', ['$http', 'restURL', function($http, re
      */
 	var validate = function (requirement) {
 		var errors = [];
+		/*
         if( requirement.idrequirement == null || requirement.idrequirement == '' ) {
 			errors.push('requirement.id.not.defined');
 		}
+		*/
 		if(errors.length > 0) {
 			throw errors;
 		}
