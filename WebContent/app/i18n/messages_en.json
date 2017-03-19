@@ -24,9 +24,9 @@
 	"person.lastName" : "lastName",
 	"person.id.not.defined" : "Person identifier is not defined",
 
-	"PersonAssignment" : "PersonAssignment",
-	"personAssignment.personIdperson" : "personIdperson",
-	"personAssignment.requirementIdrequirement" : "requirementIdrequirement",
+	"PersonAssignment" : "Person Assignment",
+	"personAssignment.personIdperson" : "Person",
+	"personAssignment.requirementIdrequirement" : "Requirement",
 	"personAssignment.status" : "status",
 	"personAssignment.id.not.defined" : "PersonAssignment identifier is not defined",
 
